@@ -1,0 +1,358 @@
+.containerMain {
+    display: flex;
+    background-image: url("https://previews.123rf.com/images/slanapotam/slanapotam1805/slanapotam180500044/101562252-all-letters-of-hebrew-alphabet-jewish-abc-background-hebrew-letters-wordcloud-vector-illustration-.jpg");
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerContent{
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    background-color: white;
+    border: 10px dashed black;
+    padding: 20px;
+    width: 55%;
+    height: 60%;
+    /*justify-content: center;*/
+    position: relative;
+}
+.containerContent::-webkit-scrollbar {width: 0}
+
+.thanks{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-image: url("./images/thankyou.png");
+}
+
+.containerNewVerbs{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigationBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.navigationBarTest{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.buttonTest{
+font-weight: 700;
+color: white;
+text-decoration: none;
+padding: .8em 1em calc(.8em + 3px);
+border-radius: 3px;
+background: #00dba8;
+box-shadow: 0 -3px #00dba8 inset;
+transition: 0.2s;
+}
+.buttonTest:hover { background: rgb(53, 167, 110); }
+.buttonTest:active {
+    background: #00dba8;
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.registerAndLogin{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "HebrewLatino";
+    src: local("HebrewLatino"),
+    url("./fonts/HebrewLatinoPlainPDF.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.hebrewFont{
+    font-family: 'HebrewLatino';
+}
+
+.hebrewFontBottomMargin{
+    font-family: 'HebrewLatino';
+    margin-bottom: 30px;
+}
+
+.toCenter{
+    display: flex;
+    flex-direction: column;
+    overflow: initial;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.newVerbsFirstRow{
+    width: 50%;
+}
+
+.newVerbsSecondRow{
+    width: 25%;
+}
+
+.message{
+    padding-left: 10px;
+    font-weight: bolder;
+    color: red;
+}
+
+.messageCorrect{
+    padding-left: 10px;
+    font-weight: bolder;
+    color: rgb(33,147,90);
+}
+
+.tableFirst{
+    width: 30%
+}
+.tableSecond{
+    width: 30%
+}
+.tableThird{
+    width: 30%
+}
+.tableFouth{
+    width: 10%;
+}
+.tableRow{
+    width: 100%;
+}
+.tableAdminFirst{
+    width: 26%
+}
+.tableAdminSecond{
+    width: 25%
+}
+.tableAdminThird{
+    width: 25%
+}
+.tableAdminFouth{
+    width: 12%;
+}
+.tableAdminFifth{
+    width: 12%;
+}
+
+
+.forPointer:hover{
+    cursor: pointer
+}
+
+.tableBackground{
+    background-color: rosybrown;
+    font-style: italic;
+}
+
+.spaceInBetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonCheck{
+    margin-right: 10px;
+    background-color: white;
+    border: white;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.buttonAddVerb{
+    background-color: whitesmoke;
+    border: 1px dashed black;
+}
+
+.rowOne{
+    background-color: whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    border-top: 5px solid whitesmoke;
+}
+.rowTwo{
+    background-color: white;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+
+.welcomeMessage{
+    margin: 20px;
+}
+.switchToMobile{
+    display: none;
+}
+
+.footerHome{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("./images/footer2.png");
+    background-size: cover;
+    width: 300px;
+    height: 130px;
+}
+
+.added{
+    color: limegreen;
+}
+
+@media all and (max-width: 990px){
+    .containerContent {
+        position: relative;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+    }
+    .mobileOneLineTest {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .newVerbMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        top: 250px;
+    }
+    .commonMistakesMobile{
+        width: 100%;
+        position: absolute;
+        top: 300px;
+        padding: 20px;
+    }
+    .thanks{
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: -70px;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        background-image: url("./images/thankyou.png");
+    }
+    .containerNewVerbs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .newVerbsFirstRow{
+        width: 80%
+    }
+    .newVerbsSecondRow{
+        width: 40%
+    }
+    .oneLineInputMobile{
+        width: 100%
+    }
+    .navigationBar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .navigationBarTest {
+        display: flex;
+        flex-direction: column;
+        /*position: absolute;*/
+        /*top: 0;*/
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .newVerbsFirstRow{
+        width: 100%;
+        text-align: center;
+    }
+    .newVerbsSecondRow{
+        width: 50%;
+    }
+    .spaceInBetween{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileSearch{
+        width: 100%
+    }
+    .toCenter{
+        display: flex;
+        flex-direction: column;
+        overflow: initial;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .registerAndLogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .mobileAuthInputs{
+        font-weight: 700;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+        box-shadow: 0 -3px #00dba8 inset;
+        transition: 0.2s;
+    }
+    .switchToMobile{
+        display: initial;
+    }
+}
+
+@media all and (max-width: 500px) and (min-width: 400px) {
+    .footerHome{
+        display: none;
+    }
+    .footerImage{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("./images/footer.png");
+        background-size: cover;
+        width: 200px;
+        height: 100px;
+    }
+    .footerImage2{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("./images/footer2.png");
+        background-size: cover;
+        width: 200px;
+        height: 100px;
+    }
+}
